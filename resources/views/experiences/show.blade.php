@@ -20,7 +20,7 @@
                         <button type="submit" class="btn btn-success btn-lg ms-3" style=" width: 100px">Like</button>
                     </form>
                     <a href="{{ route('experiences.index') }}" class="btn btn-secondary ms-3">Retour à la liste</a>
-                    <a href="{{ route('experiences.edit', $experience->id) }}" class="btn btn-warning ms-3">Modifier</a>
+
                     
                 </div>
             </div>

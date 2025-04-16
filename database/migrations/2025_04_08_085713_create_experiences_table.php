@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string("description_auteur");
             $table->string("date_publication");
             $table->unsignedInteger("nombre_like")->default(0);
+            $table->unsignedBigInteger('utilisateurs_id');
+            $table->foreign('utilisateurs_id')->references('id')->on('utilisateurs')->onDelete('cascade');
             $table->timestamps();
         });
     }
